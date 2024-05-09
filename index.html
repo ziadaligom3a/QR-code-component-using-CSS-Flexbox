@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      html,
+      body {
+        background-color: #d5e1ef;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .parent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .main-qr {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 16px;
+        margin-top: 10rem;
+        background-color: white;
+        width: 320px;
+        height: 497px;
+        border-radius: 20px;
+      }
+
+      .first-part {
+        background-color: #3685ff;
+        background-image: url("./images/image-qr-code.png");
+        background-position: center;
+        background-size: contain;
+        width: 288px;
+        height: 288px;
+        border-radius: 20px;
+      }
+
+      .text-part {
+        padding-top: 40px;
+      }
+
+      .text-part h3 {
+        color: #1f314f;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: "Outfit";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 28px;
+        text-align: center;
+      }
+
+      .text-part p {
+        padding: 16px;
+        font-family: "Outfit";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 19px;
+        letter-spacing: 0.1875px;
+        text-align: center;
+        color: #7d889e;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="parent">
+        <div class="main-qr">
+          <div class="first-part"></div>
+          <div class="text-part">
+            <h3>Improve your front-end<br />skills by building projects</h3>
+            <p>
+              Scan the QR code to visit Frontend Mentor and take your coding
+              skills to the next level
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
